@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8UHCc4ZVtDNwDZ46TsOTK17OMGv70Q6j/bP6RVzj6UXLw4iOaw1PpOWij/SevWpzBCuAQE00q/xlQGcJM35J0A==",
+  "dgSpecHash": "RtZUhHPlnYKxn5zPU0aLblvEDuEjDwXcBo+OvpHimJloP6fYHiGkWRhjmBjUOh+C/a5fI6V0lLViL16RYKnKkQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\neilh\\LiftOff\\BassRigCurator\\BassRigCurator\\BassRigCurator.csproj",
   "expectedPackageFiles": [
@@ -44,7 +44,10 @@
     "C:\\Users\\neilh\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\neilh\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\neilh\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\neilh\\.nuget\\packages\\mysqlconnector\\0.61.0\\mysqlconnector.0.61.0.nupkg.sha512",
     "C:\\Users\\neilh\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\neilh\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\3.1.1\\pomelo.entityframeworkcore.mysql.3.1.1.nupkg.sha512",
+    "C:\\Users\\neilh\\.nuget\\packages\\pomelo.jsonobject\\2.2.1\\pomelo.jsonobject.2.2.1.nupkg.sha512",
     "C:\\Users\\neilh\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\neilh\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\neilh\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

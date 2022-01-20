@@ -90,3 +90,6 @@ C:\Users\neilh\LiftOff\BassRigCurator\BassRigCurator\obj\Debug\netcoreapp3.1\Bas
 C:\Users\neilh\LiftOff\BassRigCurator\BassRigCurator\obj\Debug\netcoreapp3.1\BassRigCurator.dll
 C:\Users\neilh\LiftOff\BassRigCurator\BassRigCurator\obj\Debug\netcoreapp3.1\BassRigCurator.pdb
 C:\Users\neilh\LiftOff\BassRigCurator\BassRigCurator\obj\Debug\netcoreapp3.1\BassRigCurator.genruntimeconfig.cache
+C:\Users\neilh\LiftOff\BassRigCurator\BassRigCurator\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\neilh\LiftOff\BassRigCurator\BassRigCurator\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\neilh\LiftOff\BassRigCurator\BassRigCurator\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
