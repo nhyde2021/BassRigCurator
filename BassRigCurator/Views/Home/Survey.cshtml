@@ -3,7 +3,7 @@
     <div class="text-lg-left">
         <form>
             <label for="budget">What is your budget?</label>
-            <input type="text" name="budget"/><br/>
+            <input type="text" name="budget" placeholder="$"/><br/>
             <label for="genre">What genre do you like to play?</label>
             <select name="genre">
                 <option>Rock</option>
@@ -12,11 +12,19 @@
                 <option>Country</option>
                 <option>Funk</option>
             </select><br/>
+
             <label for="volume">How loud are you able to play?</label>
-            <input type="range" min="0" max="100"/><br/>
-            <laber for="portability">Does the rig need to be portable?</laber>
-            <input type="radio" name="portability" value="Yes"/>Yes
-            <input type="radio" name="portability" value="No"/>No
+            <input type="radio" name="volume" value="silent"/>Silent 
+            <input type="radio" name="volume" value="quietly"/>Quietly 
+            <input type="radio" name="volume" value="medium"/>Somewhat Loud 
+            <input type="radio" name="volume" value="loud"/>Loud 
+            <input type="radio" name="volume" value="veryLoud"/>Very Loud <br/>
+
+            <label for="portability">Does the rig need to be portable?</label>
+            <input type="radio" name="portability" value="Yes"/>Yes 
+            <input type="radio" name="portability" value="No"/>No<br/>
+
+            <input type="submit" value="See your custom rig!"/>
         </form>
     </div>
 </div
