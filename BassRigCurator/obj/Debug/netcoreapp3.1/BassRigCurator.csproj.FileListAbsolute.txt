@@ -188,4 +188,4 @@ C:\Users\neilh\LiftOff\newBassRigCurator\BassRigCurator\obj\Debug\netcoreapp3.1\
 C:\Users\neilh\LiftOff\newBassRigCurator\BassRigCurator\obj\Debug\netcoreapp3.1\BassRigCurator.dll
 C:\Users\neilh\LiftOff\newBassRigCurator\BassRigCurator\obj\Debug\netcoreapp3.1\BassRigCurator.pdb
 C:\Users\neilh\LiftOff\newBassRigCurator\BassRigCurator\obj\Debug\netcoreapp3.1\BassRigCurator.genruntimeconfig.cache
-C:\Users\neilh\LiftOff\newBassRigCurator\BassRigCurator\obj\Debug\netcoreapp3.1\Razor\Views\Home\Survey.cshtml.g.cs
+C:\Users\neilh\LiftOff\newBassRigCurator\BassRigCurator\obj\Debug\netcoreapp3.1\Razor\Views\Survey\Index.cshtml.g.cs

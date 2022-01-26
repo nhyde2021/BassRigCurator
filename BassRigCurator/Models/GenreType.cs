@@ -1,6 +1,6 @@
 ﻿namespace BassRigCurator.Models
 {
-    public enum Genre
+    public enum GenreType
     {
         Rock,
         Jazz,

@@ -22,10 +22,6 @@ namespace BassRigCurator.Controllers
         {
             return View();
         }
-        public IActionResult Survey()
-        {
-            return View();
-        }
 
         public IActionResult Privacy()
         {

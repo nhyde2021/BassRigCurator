@@ -5,7 +5,7 @@
         public string Name { get; set; }
         public int Price { get; set; }
         public string Description { get; set; }
-        public Genre Genre { get; set; }
+        public GenreType Genre { get; set; }
 
         public Bass(string name, int price, string description)
         {
