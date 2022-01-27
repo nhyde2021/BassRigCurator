@@ -1,1 +1,15 @@
-﻿<h1>Results</h1>
+﻿@*@using BassRigCurator.Models;
+@model List<Bass>;*@
+
+<h1>Results</h1>
+
+<ul>
+    @if(ViewBag.curatedBassList != null)
+    {
+        @foreach(Bass bass in ViewBag.curatedBassList)
+        {
+        <li>@bass</li>
+        }
+    }
+    
+</ul>

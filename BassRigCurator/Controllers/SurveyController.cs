@@ -1,14 +1,47 @@
-﻿using BassRigCurator.Models;
+﻿using BassRigCurator.Data;
+using BassRigCurator.Models;
+using BassRigCurator.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace BassRigCurator.Controllers
 {
     public class SurveyController : Controller
     {
+        private ApplicationDbContext context;
+
+        public SurveyController(ApplicationDbContext dbContext)
+        {
+            context = dbContext;
+        }
         public IActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        [Route("Results")]
+        public IActionResult HandleSurveyForm(SurveyViewModel surveyViewModel)
+        {
+            List<Bass> basses = context.Basses.ToList();
+            List<Amp> amps = context.Amps.ToList();
+
+            if (ModelState.IsValid)
+            {
+                List<Bass> curatedBassList = new List<Bass>();
+                List<Amp> curatedAmpList = new List<Amp>();
+
+                foreach (Bass bass in basses)
+                {
+                    if(bass.Price < surveyViewModel.BassBudget)
+                    {
+                        curatedBassList.Add(bass);
+                    }
+                }
+                ViewBag.Basses = curatedBassList;
+            }
+            return Redirect("results");
         }
 
 

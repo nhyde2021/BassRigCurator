@@ -1,7 +1,7 @@
 ﻿<div class="text-center">
     <h1 class="display-4">Answer these questions to get your custom rig</h1>
     <div class="text-lg-left">
-        <form>
+        <form asp-controller="Survey" asp-action="HandleSurveyForm" method="post">
             <h2>Bass Guitar questions</h2>
 
             <label for="bassBudget">What is your budget for a bass?</label>
@@ -27,10 +27,6 @@
             <input type="radio" name="volume" value="medium"/>Somewhat Loud 
             <input type="radio" name="volume" value="loud"/>Loud 
             <input type="radio" name="volume" value="veryLoud"/>Very Loud <br/>
-
-            <label for="portability">Does the rig need to be portable?</label>
-            <input type="radio" name="portability" value="Yes"/>Yes 
-            <input type="radio" name="portability" value="No"/>No<br/>
 
             <input type="submit" value="See your custom rig!"/>
         </form>
