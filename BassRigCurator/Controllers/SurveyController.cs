@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BassRigCurator.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace BassRigCurator.Controllers
 {
@@ -8,5 +10,7 @@ namespace BassRigCurator.Controllers
         {
             return View();
         }
+
+
     }
 }

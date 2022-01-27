@@ -9,6 +9,11 @@
         public string Portable { get; set; }
         public string Description { get; set; }
 
+        public Amp()
+        {
+
+        }
+
         public Amp(string name, string volume, int price, string portable, string description )
         {
             Name = name;

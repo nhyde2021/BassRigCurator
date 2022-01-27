@@ -8,6 +8,11 @@
         public string Description { get; set; }
         public GenreType Genre { get; set; }
 
+        public Bass()
+        {
+
+        }
+
         public Bass(string name, int price, string description)
         {
             Name = name;
