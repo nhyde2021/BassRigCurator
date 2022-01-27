@@ -18,14 +18,21 @@ namespace BassRigCurator.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            SurveyViewModel surveyViewModel = new SurveyViewModel();
+            return View(surveyViewModel);
         }
 
         [HttpPost]
-        [Route("Results")]
         public IActionResult HandleSurveyForm(SurveyViewModel surveyViewModel)
         {
-            Console.WriteLine("budget", surveyViewModel.BassBudget);
+            SurveyViewModel surveyAnswers = new SurveyViewModel
+            {
+                BassBudget = surveyViewModel.BassBudget,
+                AmpBudget = surveyViewModel.AmpBudget,
+                Volume = surveyViewModel.Volume,
+                Genre = surveyViewModel.Genre
+            };
+            Console.WriteLine("budget", surveyAnswers.BassBudget);
 
             List<Bass> basses = context.Basses.ToList();
             List<Amp> amps = context.Amps.ToList();
@@ -37,7 +44,7 @@ namespace BassRigCurator.Controllers
 
                 foreach (Bass bass in basses)
                 {
-                    if(bass.Price < surveyViewModel.BassBudget)
+                    if(bass.Price < surveyAnswers.BassBudget)
                     {
                         curatedBassList.Add(bass);
                     }
@@ -45,7 +52,7 @@ namespace BassRigCurator.Controllers
             }
             ViewBag.Basses = curatedBassList;
             
-            return Redirect("results");
+            return Redirect("/results");
         }
 
 

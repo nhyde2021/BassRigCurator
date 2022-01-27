@@ -3,13 +3,15 @@
 
 <h1>Results</h1>
 
-<ul>
+
     @if(ViewBag.curatedBassList != null)
     {
-        @foreach(Bass bass in ViewBag.curatedBassList)
-        {
-        <li>@bass.Name</li>
-        }
+        <ul>
+            @foreach(Bass bass in ViewBag.curatedBassList)
+            {
+            <li>@bass.Name</li>
+            }
+        </ul>
     }
     
-</ul>
+

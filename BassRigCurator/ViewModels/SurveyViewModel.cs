@@ -21,5 +21,10 @@ namespace BassRigCurator.ViewModels
             new SelectListItem(GenreType.Metal.ToString(), ((int)GenreType.Metal).ToString()),
             new SelectListItem(GenreType.Funk.ToString(), ((int)GenreType.Funk).ToString())
         };
+
+        public SurveyViewModel()
+        {
+
+        }
     }
 }

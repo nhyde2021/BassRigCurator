@@ -1,25 +1,28 @@
-﻿<div class="text-center">
+﻿@using BassRigCurator.ViewModels;
+@model SurveyViewModel;
+
+<div class="text-center">
     <h1 class="display-4">Answer these questions to get your custom rig</h1>
     <div class="text-lg-left">
         <form asp-controller="Survey" asp-action="HandleSurveyForm" method="post">
             <h2>Bass Guitar questions</h2>
 
-            <label for="BassBudget">What is your budget for a bass?</label>
-            <input type="text" name="BassBudget" placeholder="$"/><br/>
+            <label asp-for="BassBudget">What is your budget for a bass?</label>
+            <input asp-for="BassBudget" placeholder="$"/><br/>
 
-            <label for="genre">What genre do you like to play?</label>
-            <select name="genre">
-                <option>Rock</option>
+            <label asp-for="Genre">What genre do you like to play?</label>
+            <select asp-for="Genre">
+                @*<option>Rock</option>
                 <option>Jazz</option>
                 <option>Metal</option>
                 <option>Country</option>
-                <option>Funk</option>
+                <option>Funk</option>*@
             </select><br/>
 
             <h2>Amplifier questions</h2>
 
-            <label for="ampBudget">What is your budget for an amplifier?</label>
-            <input type="text" name="ampBudget" placeholder="$"/><br/>
+            <label asp-for="AmpBudget">What is your budget for an amplifier?</label>
+            <input asp-for="AmpBudget" placeholder="$"/><br/>
 
             <label for="volume">How loud are you able to play?</label>
             <input type="radio" name="volume" value="silent"/>Silent 
