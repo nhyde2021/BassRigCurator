@@ -11,13 +11,7 @@
             <input asp-for="BassBudget" placeholder="$"/><br/>
 
             <label asp-for="Genre">What genre do you like to play?</label>
-            <select asp-for="Genre">
-                @*<option>Rock</option>
-                <option>Jazz</option>
-                <option>Metal</option>
-                <option>Country</option>
-                <option>Funk</option>*@
-            </select><br/>
+            <select asp-for="Genre" asp-items="Model.GenreTypes"></select><br/>
 
             <h2>Amplifier questions</h2>
 

@@ -16,6 +16,9 @@ namespace BassRigCurator.Controllers
         {
             context = dbContext;
         }
+        List<Bass> curatedBassList = new List<Bass>();
+        List<Amp> curatedAmpList = new List<Amp>();
+        
         public IActionResult Index()
         {
             SurveyViewModel surveyViewModel = new SurveyViewModel();
@@ -23,6 +26,7 @@ namespace BassRigCurator.Controllers
         }
 
         [HttpPost]
+        [Route("Survey/Index")]
         public IActionResult HandleSurveyForm(SurveyViewModel surveyViewModel)
         {
             SurveyViewModel surveyAnswers = new SurveyViewModel
@@ -32,12 +36,8 @@ namespace BassRigCurator.Controllers
                 Volume = surveyViewModel.Volume,
                 Genre = surveyViewModel.Genre
             };
-            Console.WriteLine("budget", surveyAnswers.BassBudget);
-
             List<Bass> basses = context.Basses.ToList();
             List<Amp> amps = context.Amps.ToList();
-            List<Bass> curatedBassList = new List<Bass>();
-            List<Amp> curatedAmpList = new List<Amp>();
 
             if (ModelState.IsValid)
             {
@@ -50,9 +50,16 @@ namespace BassRigCurator.Controllers
                     }
                 }
             }
-            ViewBag.Basses = curatedBassList;
+            ViewBag.bassSelections = curatedBassList;
             
-            return Redirect("/results");
+            return View("Results");
+        }
+
+        public IActionResult Results()
+        {
+            ViewBag.bassSelections = curatedBassList;
+            ViewBag.ampSelections = curatedAmpList;
+            return View();
         }
 
 

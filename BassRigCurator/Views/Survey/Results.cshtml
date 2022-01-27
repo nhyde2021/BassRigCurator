@@ -1,0 +1,16 @@
+﻿
+<h1>Results</h1>
+
+
+@if(ViewBag.bassSelections != null)
+{
+    <ul>
+        @foreach(var bass in ViewBag.bassSelections)
+        {
+        <li>@bass.Name</li>
+        }
+    </ul>
+}
+
+
+
