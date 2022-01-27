@@ -46,7 +46,10 @@ namespace BassRigCurator.Controllers
                 {
                     if(bass.Price < surveyAnswers.BassBudget)
                     {
-                        curatedBassList.Add(bass);
+                        if(bass.Genre == surveyAnswers.Genre)
+                        {
+                            curatedBassList.Add(bass);
+                        }
                     }
                 }
             }
@@ -61,7 +64,5 @@ namespace BassRigCurator.Controllers
             ViewBag.ampSelections = curatedAmpList;
             return View();
         }
-
-
     }
 }
