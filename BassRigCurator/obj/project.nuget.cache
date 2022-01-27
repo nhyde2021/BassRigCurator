@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ILaA239D4oEEbigHSgPca2QuHg0aRnfHb2GsPvOhaOYJpy8EhB2meBVxtX+mL9mUkFg5K/NvpY4CSJBoqghoVQ==",
+  "dgSpecHash": "RtZUhHPlnYKxn5zPU0aLblvEDuEjDwXcBo+OvpHimJloP6fYHiGkWRhjmBjUOh+C/a5fI6V0lLViL16RYKnKkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\neilh\\LiftOff\\newBassRigCurator\\BassRigCurator\\BassRigCurator.csproj",
+  "projectFilePath": "C:\\Users\\neilh\\LiftOff\\BassRigCurator\\BassRigCurator\\BassRigCurator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\neilh\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.20\\microsoft.aspnetcore.cryptography.internal.3.1.20.nupkg.sha512",
     "C:\\Users\\neilh\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.20\\microsoft.aspnetcore.cryptography.keyderivation.3.1.20.nupkg.sha512",

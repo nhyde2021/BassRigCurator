@@ -5793,11 +5793,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\neilh\\LiftOff\\newBassRigCurator\\BassRigCurator\\BassRigCurator.csproj",
+      "projectUniqueName": "C:\\Users\\neilh\\LiftOff\\BassRigCurator\\BassRigCurator\\BassRigCurator.csproj",
       "projectName": "BassRigCurator",
-      "projectPath": "C:\\Users\\neilh\\LiftOff\\newBassRigCurator\\BassRigCurator\\BassRigCurator.csproj",
+      "projectPath": "C:\\Users\\neilh\\LiftOff\\BassRigCurator\\BassRigCurator\\BassRigCurator.csproj",
       "packagesPath": "C:\\Users\\neilh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\neilh\\LiftOff\\newBassRigCurator\\BassRigCurator\\obj\\",
+      "outputPath": "C:\\Users\\neilh\\LiftOff\\BassRigCurator\\BassRigCurator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\neilh\\AppData\\Roaming\\NuGet\\NuGet.Config",
