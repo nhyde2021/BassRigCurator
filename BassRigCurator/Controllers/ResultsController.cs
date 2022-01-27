@@ -2,7 +2,7 @@
 
 namespace BassRigCurator.Controllers
 {
-    public class HomeController1 : Controller
+    public class ResultsController : Controller
     {
         public IActionResult Index()
         {
