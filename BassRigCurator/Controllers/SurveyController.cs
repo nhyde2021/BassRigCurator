@@ -2,6 +2,7 @@
 using BassRigCurator.Models;
 using BassRigCurator.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -24,13 +25,15 @@ namespace BassRigCurator.Controllers
         [Route("Results")]
         public IActionResult HandleSurveyForm(SurveyViewModel surveyViewModel)
         {
+            Console.WriteLine("budget", surveyViewModel.BassBudget);
+
             List<Bass> basses = context.Basses.ToList();
             List<Amp> amps = context.Amps.ToList();
+            List<Bass> curatedBassList = new List<Bass>();
+            List<Amp> curatedAmpList = new List<Amp>();
 
             if (ModelState.IsValid)
             {
-                List<Bass> curatedBassList = new List<Bass>();
-                List<Amp> curatedAmpList = new List<Amp>();
 
                 foreach (Bass bass in basses)
                 {
@@ -39,8 +42,9 @@ namespace BassRigCurator.Controllers
                         curatedBassList.Add(bass);
                     }
                 }
-                ViewBag.Basses = curatedBassList;
             }
+            ViewBag.Basses = curatedBassList;
+            
             return Redirect("results");
         }
 
