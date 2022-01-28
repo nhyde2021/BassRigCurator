@@ -12,7 +12,7 @@ namespace BassRigCurator.ViewModels
         [Required(ErrorMessage = "Model is required")]
         public string Model { get; set; }
         [Required(ErrorMessage = "Price is required")]
-        [Range(50, 10000, ErrorMessage ="Price must be at least $50")]
+        [Range(60, 10000, ErrorMessage ="Price must be between $50 and $10,000")]
         public int Price { get; set; }
         [Required(ErrorMessage = "Description is required")]
         public string Description { get; set; }
