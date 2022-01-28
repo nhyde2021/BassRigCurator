@@ -52,8 +52,20 @@ namespace BassRigCurator.Controllers
                         }
                     }
                 }
+                foreach (Amp amp in amps)
+                {
+                    if (amp.Price < surveyAnswers.AmpBudget)
+                    {
+                        if (amp.Volume == surveyAnswers.Volume)
+                        {
+                            curatedAmpList.Add(amp);
+                        }
+                    }
+                }
+
             }
             ViewBag.bassSelections = curatedBassList;
+            ViewBag.AmpSelections = curatedAmpList;
             
             return View("Results");
         }

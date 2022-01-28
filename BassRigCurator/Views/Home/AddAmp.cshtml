@@ -1,0 +1,22 @@
+﻿@using BassRigCurator.ViewModels;
+@model AddAmpViewModel;
+
+<h1>Add Amp</h1>
+<form asp-controller="Home" asp-action="HandleAddAmpForm" method="post">
+    <label asp-for="Brand"></label>
+    <input asp-for="Brand" /><br/>
+
+    <label asp-for="Model"></label>
+    <input asp-for="Model" /><br/>
+
+    <label asp-for="Price"></label>
+    <input asp-for="Price" /><br/>
+
+    <label asp-for="Description"></label>
+    <textarea asp-for="Description" rows="5" cols="60">Description</textarea> <br/>
+
+    <label asp-for="Volume"></label>
+    <select asp-for="Volume" asp-items="Model.VolumeLevels"></select>
+
+    <input type="submit" value="Add New Amp" />
+</form>

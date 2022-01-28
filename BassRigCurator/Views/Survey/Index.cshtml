@@ -18,12 +18,8 @@
             <label asp-for="AmpBudget">What is your budget for an amplifier?</label>
             <input asp-for="AmpBudget" placeholder="$"/><br/>
 
-            <label for="volume">How loud are you able to play?</label>
-            <input type="radio" name="volume" value="silent"/>Silent 
-            <input type="radio" name="volume" value="quietly"/>Quietly 
-            <input type="radio" name="volume" value="medium"/>Somewhat Loud 
-            <input type="radio" name="volume" value="loud"/>Loud 
-            <input type="radio" name="volume" value="veryLoud"/>Very Loud <br/>
+            <label asp-for="Volume">How loud are you able to play?</label>
+            <select asp-for="Volume" asp-items="Model.VolumeLevels"></select><br/>
 
             <input type="submit" value="See your custom rig!"/>
         </form>

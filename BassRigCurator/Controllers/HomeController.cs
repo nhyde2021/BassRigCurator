@@ -68,5 +68,35 @@ namespace BassRigCurator.Controllers
             return View("AddBass");
 
         }
+
+
+        public IActionResult AddAmp()
+        {
+            AddAmpViewModel addAmpViewModel = new AddAmpViewModel();
+
+            return View(addAmpViewModel);
+        }
+
+        [HttpPost]
+        public IActionResult HandleAddAmpForm(AddAmpViewModel addAmpViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                Amp newAmp = new Amp
+                {
+                    Brand = addAmpViewModel.Brand,
+                    Model = addAmpViewModel.Model,
+                    Price = addAmpViewModel.Price,
+                    Description = addAmpViewModel.Description,
+                    Volume = addAmpViewModel.Volume
+                };
+                context.Amps.Add(newAmp);
+                context.SaveChanges();
+
+                return Redirect("AddAmp");
+            }
+            return View("AddAmp");
+
+        }
     }
 }

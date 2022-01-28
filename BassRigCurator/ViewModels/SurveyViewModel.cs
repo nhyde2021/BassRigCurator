@@ -11,7 +11,15 @@ namespace BassRigCurator.ViewModels
         [Range(90, 25000, ErrorMessage = "Budget must be between $90 and $25,000")]*/
         public int BassBudget { get; set; }
         public int AmpBudget { get; set; }
-        public string Volume { get; set; }
+        public VolumeLevel Volume { get; set; }
+        public List<SelectListItem> VolumeLevels { get; set; } = new List<SelectListItem>
+        {
+            new SelectListItem(VolumeLevel.Silent.ToString(), ((int)VolumeLevel.Silent).ToString()),
+            new SelectListItem(VolumeLevel.Quietly.ToString(), ((int)VolumeLevel.Quietly).ToString()),
+            new SelectListItem(VolumeLevel.Medium.ToString(), ((int)VolumeLevel.Medium).ToString()),
+            new SelectListItem(VolumeLevel.Loud.ToString(), ((int)VolumeLevel.Loud).ToString()),
+            new SelectListItem(VolumeLevel.VeryLoud.ToString(), ((int)VolumeLevel.VeryLoud).ToString())
+        };
         public GenreType Genre { get; set; }
         public List<SelectListItem> GenreTypes { get; set; } = new List<SelectListItem>
         {
