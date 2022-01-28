@@ -7,9 +7,12 @@ namespace BassRigCurator.ViewModels
 {
     public class SurveyViewModel
     {
-        /*[Required(ErrorMessage = "Budget is required")]
-        [Range(90, 25000, ErrorMessage = "Budget must be between $90 and $25,000")]*/
+        [Required(ErrorMessage = "Budget is required")]
+        [Range(90, 25000, ErrorMessage = "Budget must be between $90 and $25,000")]
         public int BassBudget { get; set; }
+
+        [Required(ErrorMessage = "Budget is required")]
+        [Range(40, 25000, ErrorMessage = "Budget must be between $40 and $25,000")]
         public int AmpBudget { get; set; }
         public VolumeLevel Volume { get; set; }
         public List<SelectListItem> VolumeLevels { get; set; } = new List<SelectListItem>

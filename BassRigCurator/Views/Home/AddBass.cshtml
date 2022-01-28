@@ -4,16 +4,20 @@
 <h1>Add Bass</h1>
 <form asp-controller="Home" asp-action="HandleAddBassForm" method="post">
     <label asp-for="Brand"></label>
-    <input asp-for="Brand" /><br/>
+    <input asp-for="Brand" />
+    <span asp-validation-for="Brand"></span><br/>
 
     <label asp-for="Model"></label>
-    <input asp-for="Model" /><br/>
+    <input asp-for="Model" />
+    <span asp-validation-for="Model"></span><br/>
 
     <label asp-for="Price"></label>
-    <input asp-for="Price" /><br/>
+    <input asp-for="Price" />
+    <span asp-validation-for="Price"></span><br/>
 
     <label asp-for="Description"></label>
-    <textarea asp-for="Description" rows="5" cols="60">Description</textarea> <br/>
+    <textarea asp-for="Description" rows="5" cols="60">Description</textarea>
+    <span asp-validation-for="Description"></span><br/>
 
     <label asp-for="Genre"></label>
     <select asp-for="Genre" asp-items="Model.GenreTypes"></select>

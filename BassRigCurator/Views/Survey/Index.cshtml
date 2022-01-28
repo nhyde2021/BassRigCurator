@@ -8,7 +8,8 @@
             <h2>Bass Guitar questions</h2>
 
             <label asp-for="BassBudget">What is your budget for a bass?</label>
-            <input asp-for="BassBudget" placeholder="$"/><br/>
+            <input asp-for="BassBudget" placeholder="$"/>
+            <span asp-validation-for="BassBudget"></span><br/>
 
             <label asp-for="Genre">What genre do you like to play?</label>
             <select asp-for="Genre" asp-items="Model.GenreTypes"></select><br/>
@@ -16,7 +17,8 @@
             <h2>Amplifier questions</h2>
 
             <label asp-for="AmpBudget">What is your budget for an amplifier?</label>
-            <input asp-for="AmpBudget" placeholder="$"/><br/>
+            <input asp-for="AmpBudget" placeholder="$"/>
+            <span asp-validation-for="AmpBudget"></span><br/>
 
             <label asp-for="Volume">How loud are you able to play?</label>
             <select asp-for="Volume" asp-items="Model.VolumeLevels"></select><br/>

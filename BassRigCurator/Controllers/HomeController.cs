@@ -65,7 +65,7 @@ namespace BassRigCurator.Controllers
 
                 return Redirect("AddBass");
             }
-            return View("AddBass");
+            return View("AddBass", addBassViewModel);
 
         }
 
@@ -95,7 +95,7 @@ namespace BassRigCurator.Controllers
 
                 return Redirect("AddAmp");
             }
-            return View("AddAmp");
+            return View("AddAmp", addAmpViewModel);
 
         }
     }

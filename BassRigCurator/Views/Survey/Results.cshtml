@@ -2,14 +2,41 @@
 <h1>Results</h1>
 
 
-@if(ViewBag.bassSelections != null)
+@if(ViewBag.bassSelections != null && ViewBag.ampSelections != null)
 {
-    <ul>
+    <h2>Bass</h2>
+    <table class="table">
+        <tr>
+            <th>Brand/Model</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Genre</th>
+        </tr>
         @foreach(var bass in ViewBag.bassSelections)
         {
-        <li>@bass.ToString()</li>
+                <td>@bass.ToString()</td>
+                <td>$@bass.Price</td>
+                <td>@bass.Description</td>
+                <td>@bass.Genre</td>
         }
-    </ul>
+    </table>
+    <h2>Amp</h2>
+    <table class="table">
+        <tr>
+            <th>Brand/Model</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Volume</th>
+        </tr>
+        @foreach(var amp in ViewBag.ampSelections)
+        {
+                <td>@amp.ToString()</td>
+                <td>$@amp.Price</td>
+                <td>@amp.Description</td>
+                <td>@amp.Volume</td>
+        }
+    </table>
+    <a asp-controller="Survey" asp-action="Index">Back to Survey page</a>
 }
 
 
