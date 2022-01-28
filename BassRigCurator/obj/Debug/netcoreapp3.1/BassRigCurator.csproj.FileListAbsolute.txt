@@ -191,3 +191,4 @@ C:\Users\neilh\LiftOff\newBassRigCurator\BassRigCurator\obj\Debug\netcoreapp3.1\
 C:\Users\neilh\LiftOff\newBassRigCurator\BassRigCurator\obj\Debug\netcoreapp3.1\Razor\Views\Survey\Index.cshtml.g.cs
 C:\Users\neilh\LiftOff\BassRigCurator\BassRigCurator\obj\Debug\netcoreapp3.1\Razor\Views\Survey\Index.cshtml.g.cs
 C:\Users\neilh\LiftOff\BassRigCurator\BassRigCurator\obj\Debug\netcoreapp3.1\Razor\Views\Survey\Results.cshtml.g.cs
+C:\Users\neilh\LiftOff\BassRigCurator\BassRigCurator\obj\Debug\netcoreapp3.1\Razor\Views\Home\AddBass.cshtml.g.cs

@@ -1,0 +1,24 @@
+﻿@using BassRigCurator.ViewModels;
+@model AddBassViewModel;
+
+<h1>Add Bass</h1>
+<form asp-controller="Home" asp-action="HandleAddBassForm" method="post">
+    <label asp-for="Brand"></label>
+    <input asp-for="Brand" /><br/>
+
+    <label asp-for="Model"></label>
+    <input asp-for="Model" /><br/>
+
+    <label asp-for="Price"></label>
+    <input asp-for="Price" /><br/>
+
+    <label asp-for="Description"></label>
+    <textarea asp-for="Description" rows="5" cols="60">Description</textarea> <br/>
+
+    <label asp-for="Genre"></label>
+    <select asp-for="Genre" asp-items="Model.GenreTypes"></select>
+
+    <input type="submit" value="Add New Bass" />
+</form>
+
+
